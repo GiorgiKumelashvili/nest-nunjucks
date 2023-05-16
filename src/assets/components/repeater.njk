@@ -8,7 +8,13 @@
 {% endmacro %}
 
 {% macro repeaterComponent(name='Repeating') %}
-  <div>
+  <style>
+    .x {
+      background: red;
+    }
+  </style>
+  
+  <div class="x">
     <p>{{name}}</p>
     {{subMacro()}}
   </div>
