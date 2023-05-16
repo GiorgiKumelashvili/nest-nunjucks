@@ -1,5 +1,15 @@
+{% import "components/icon.njk" as icon %}
+
+{% macro subMacro(name='subMacro') %}
+  <div>
+    <p>{{name}}</p>
+    {{icon.arrow()}}
+  </div>
+{% endmacro %}
+
 {% macro repeaterComponent(name='Repeating') %}
   <div>
     <p>{{name}}</p>
+    {{subMacro()}}
   </div>
 {% endmacro %}
